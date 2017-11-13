@@ -224,8 +224,8 @@ func NewCustom(init *InitType) (f *Fpdf) {
 // reference an actual directory if a font other than one of the core
 // fonts is used. The core fonts are "courier", "helvetica" (also called
 // "arial"), "times", and "zapfdingbats" (also called "symbol").
-func New(orientationStr, unitStr, sizeStr, fontDirStr string) (f *Fpdf) {
-	return fpdfNew(orientationStr, unitStr, sizeStr, fontDirStr, SizeType{0, 0})
+func New(orientationStr, unitStr, sizeStr, fontDirStr string, size) (f *Fpdf) {
+	return fpdfNew(orientationStr, unitStr, sizeStr, fontDirStr, size)
 }
 
 // Ok returns true if no processing errors have occurred.
